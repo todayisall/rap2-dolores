@@ -106,14 +106,6 @@ function AccountButton({ user }: { user: User }) {
   return (
     <div>
       <Button
-        onClick={() => window.open('https://github.com/thx/gogocode')}
-        color="inherit"
-        style={{ textTransform: 'none' }}
-      >
-        代码转换试试GoGoCode
-        <GoLinkExternal className="ml5" />
-      </Button>
-      <Button
         color="inherit"
         aria-haspopup="true"
         aria-label="账户"
@@ -170,16 +162,9 @@ export default function MainMenu(props: Props) {
             <Button className={classes.link} onClick={() => dispatch(push('/'))}>首页</Button>
             <Button className={classes.link} onClick={() => dispatch(push('/repository/joined'))}>仓库</Button>
             <Button className={classes.link} onClick={() => dispatch(push('/organization/joined'))}>团队</Button>
-            <Button className={classes.link} onClick={() => dispatch(push('/api'))}>接口</Button>
             <Button className={classes.link} onClick={() => dispatch(push('/status'))}>状态</Button>
+            <Button className={classes.link} onClick={() => dispatch(push('/api'))}>使用手册</Button>
             <Button className={classes.link} onClick={() => dispatch(push('/about'))}>关于</Button>
-            <Button
-              className={classes.link}
-              onClick={() => window.open('https://github.com/thx/rap2-delos/issues/new/choose')}
-              color="inherit"
-            >
-              问题反馈
-            </Button>
           </div>
           <AccountButton user={user} />
         </Toolbar>

@@ -251,17 +251,6 @@ class RepositoryEditor extends Component<Props, States> {
               entityId={repository?.id}
               entityType={ENTITY_TYPE.REPOSITORY}
             />
-            <span
-              className="g-link edit"
-              onClick={() => this.setState({ rapperInstallerModalOpen: true })}
-            >
-              <GoCode /> Rapper
-            </span>
-            <RapperInstallerModal
-              open={this.state.rapperInstallerModalOpen}
-              handleClose={() => this.setState({ rapperInstallerModalOpen: false })}
-              repository={repository}
-            />
           </div>
           <RepositorySearcher repository={repository} />
           <div className="desc"><Markdown>{repository.description || ''}</Markdown></div>
