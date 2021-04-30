@@ -26,10 +26,6 @@ function AboutView() {
 
   相关开源、部署建议，请关注GitHub仓库首页README
 
-  同时欢迎您前往 [GitHub Issues](https://github.com/thx/rap2-delos/issues) 提出宝贵意见!
-
-  钉钉群：11789704
-
   `
   return (
     <Paper className={classes.root}>
